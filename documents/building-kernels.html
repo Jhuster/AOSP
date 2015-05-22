@@ -1,109 +1,13 @@
 <!DOCTYPE html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<meta name="Description" content="Some of the requirements for your build environment are determined by which version of the source code you plan to compile. See Codenames, Tags, and Build Numbers for a full listing of branches you may choose from. You may also choose to download and …">
+<meta name="Description" content="If you are only interested in the kernel, you may use this guide to download and build the appropriate kernel. The following instructions assume that you have not downloaded all of AOSP. If you have downloaded all of AOSP, you may skip the git clone steps…">
 
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-<title>Building the System | Android Developers</title>
+<title>Building Kernels | Android Developers</title>
 
 <!-- STYLESHEETS -->
 <link rel="stylesheet"
@@ -337,7 +241,7 @@ onkeyup="return search_changed(event, false, '/')" />
   
     
       
-        <h1 itemprop="name" >Building the System</h1>
+        <h1 itemprop="name" >Building Kernels</h1>
       
     
   
@@ -371,171 +275,214 @@ onkeyup="return search_changed(event, false, '/')" />
   </div>
 </div>
 
-The following instructions to build the Android source tree apply to all branches, including <code>master</code>.
-
-<h2 id="choosing-a-branch">Choosing a Branch</h2>
-<p>Some of the requirements for your build environment are determined by which
-version of the source code you plan to compile. See
-<a href="build-numbers.html">Codenames, Tags, and Build Numbers</a> for a full listing of branches you may
-choose from. You may also choose to download and build the latest source code
-(called <code>master</code>), in which case you will simply omit the branch specification
-when you initialize the repository.</p>
-<p>Once you have selected a branch, follow the appropriate instructions below to
-set up your build environment.</p>
-
-
-<p>The basic sequence of build commands is as follows:</p>
-<h2 id="initialize">Initialize</h2>
-<p>Initialize the environment with the <code>envsetup.sh</code> script. Note
-that replacing <code>source</code> with <code>.</code> (a single dot) saves a few characters,
-and the short form is more commonly used in documentation.</p>
-<pre><code>$ source build/envsetup.sh
-</code></pre>
-<p>or</p>
-<pre><code>$ . build/envsetup.sh
-</code></pre>
-<h2 id="choose-a-target">Choose a Target</h2>
-<p>Choose which target to build with <code>lunch</code>.  The exact configuration can be passed as
-an argument. For example, the following command:</p>
-<pre><code>$ lunch aosp_arm-eng
-</code></pre>
-<p>refers to a complete build for the emulator, with all debugging enabled.</p>
-<p>If run with no arguments <code>lunch</code> will prompt you to choose a target from the menu. </p>
-<p>All build targets take the form <code>BUILD-BUILDTYPE</code>, where the <code>BUILD</code> is a codename
-referring to the particular feature combination. Here's a partial list:</p>
+<p>If you are only interested in the kernel, you may use this guide
+to download and build the appropriate kernel.</p>
+<p>The following instructions assume that you have not downloaded all
+of AOSP.  If you have downloaded all of AOSP, you may skip the git
+clone steps other than the step to download the actual kernel sources.</p>
+<p>We will use the Pandaboard kernel in all the following examples.</p>
+<h2 id="figuring-out-which-kernel-to-build">Figuring out which kernel to build</h2>
+<p>This table lists the name and locations of the kernel sources and binaries:
 <table>
-<thead>
-<tr>
-<th>Build name</th>
-<th>Device</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>aosp_arm</td>
-<td>ARM emulator</td>
-<td>AOSP, fully configured with all languages, apps, input methods</td>
-</tr>
-<tr>
-<td>aosp_maguro</td>
-<td>maguro</td>
-<td>AOSP, running on Galaxy Nexus GSM/HSPA+ ("maguro")</td>
-</tr>
-<tr>
-<td>aosp_panda</td>
-<td>panda</td>
-<td>AOSP, running on PandaBoard ("panda")</td>
-</tr>
-</tbody>
+  <tr>
+    <th>Device</th>
+    <th>Binary location</th>
+    <th>Source location</th>
+    <th>Build configuration</th>
+  </tr>
+  <tr>
+    <td>shamu</td>
+    <td>device/moto/shamu-kernel</td>
+    <td>kernel/msm</td>
+    <td>shamu_defconfig</td>
+  </tr>
+  <tr>
+    <td>fugu</td>
+    <td>device/asus/fugu-kernel</td>
+    <td>kernel/x86_64</td>
+    <td>fugu_defconfig</td>
+  </tr>
+  <tr>
+    <td>volantis</td>
+    <td>device/htc/flounder-kernel</td>
+    <td>kernel/tegra</td>
+    <td>flounder_defconfig</td>
+  </tr>
+  <tr>
+    <td>hammerhead</td>
+    <td>device/lge/hammerhead-kernel</td>
+    <td>kernel/msm</td>
+    <td>hammerhead_defconfig</td>
+  </tr>
+  <tr>
+    <td>flo</td>
+    <td>device/asus/flo-kernel/kernel</td>
+    <td>kernel/msm</td>
+    <td>flo_defconfig</td>
+  </tr>
+  <tr>
+    <td>deb</td>
+    <td>device/asus/flo-kernel/kernel</td>
+    <td>kernel/msm</td>
+    <td>flo_defconfig</td>
+  </tr>
+  <tr>
+    <td>manta</td>
+    <td>device/samsung/manta/kernel</td>
+    <td>kernel/exynos</td>
+    <td>manta_defconfig</td>
+  </tr>
+  <tr>
+    <td>mako</td>
+    <td>device/lge/mako-kernel/kernel</td>
+    <td>kernel/msm</td>
+    <td>mako_defconfig</td>
+  </tr>
+  <tr>
+    <td>grouper</td>
+    <td>device/asus/grouper/kernel</td>
+    <td>kernel/tegra</td>
+    <td>tegra3_android_defconfig</td>
+  </tr>
+  <tr>
+    <td>tilapia</td>
+    <td>device/asus/grouper/kernel</td>
+    <td>kernel/tegra</td>
+    <td>tegra3_android_defconfig</td>
+  </tr>
+  <tr>
+    <td>maguro</td>
+    <td>device/samsung/tuna/kernel</td>
+    <td>kernel/omap</td>
+    <td>tuna_defconfig</td>
+  </tr>
+  <tr>
+    <td>toro</td>
+    <td>device/samsung/tuna/kernel</td>
+    <td>kernel/omap</td>
+    <td>tuna_defconfig</td>
+  </tr>
+  <tr>
+    <td>panda</td>
+    <td>device/ti/panda/kernel</td>
+    <td>kernel/omap</td>
+    <td>panda_defconfig</td>
+  </tr>
+  <tr>
+    <td>stingray</td>
+    <td>device/moto/wingray/kernel</td>
+    <td>kernel/tegra</td>
+    <td>stingray_defconfig</td>
+  </tr>
+  <tr>
+    <td>wingray</td>
+    <td>device/moto/wingray/kernel </td>
+    <td>kernel/tegra</td>
+    <td>stingray_defconfig</td>
+  </tr>
+  <tr>
+    <td>crespo</td>
+    <td>device/samsung/crespo/kernel</td>
+    <td>kernel/samsung</td>
+    <td>herring_defconfig</td>
+  </tr>
+  <tr>
+    <td>crespo4g</td>
+    <td>device/samsung/crespo/kernel</td>
+    <td>kernel/samsung</td>
+    <td>herring_defconfig</td>
+  </tr>
 </table>
-<p>and the BUILDTYPE is one of the following:</p>
-<table>
-<thead>
-<tr>
-<th>Buildtype</th>
-<th>Use</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>user</td>
-<td>limited access; suited for production</td>
-</tr>
-<tr>
-<td>userdebug</td>
-<td>like "user" but with root access and debuggability; preferred for debugging</td>
-</tr>
-<tr>
-<td>eng</td>
-<td>development configuration with additional debugging tools</td>
-</tr>
-</tbody>
-</table>
-<p>For more information about building for and running on actual hardware, see
-<a href="building-devices.html">Building for Devices</a>.</p>
-<h2 id="build-the-code">Build the Code</h2>
-<p>Build everything with <code>make</code>. GNU make can handle parallel
-tasks with a <code>-jN</code> argument, and it's common to use a number of
-tasks N that's between 1 and 2 times the number of hardware
-threads on the computer being used for the build. For example, on a
-dual-E5520 machine (2 CPUs, 4 cores per CPU, 2 threads per core),
-the fastest builds are made with commands between <code>make -j16</code> and
-<code>make -j32</code>.</p>
-<pre><code>$ make -j4
-</code></pre>
-<h2 id="run-it">Run It!</h2>
-<p>You can either run your build on an emulator or flash it on a device. Please note that you have already selected your build target with <code>lunch</code>, and it is unlikely at best to run on a different target than it was built for.</p>
-<h3 id="flash-a-device">Flash a Device</h3>
-<p>To flash a device, you will need to use <code>fastboot</code>, which should be included in your path after a successful build. Place the device in fastboot mode either manually by holding the appropriate key combination at boot, or from the shell with</p>
-<pre><code>$ adb reboot bootloader
-</code></pre>
-<p>Once the device is in fastboot mode, run </p>
-<pre><code>$ fastboot flashall -w
-</code></pre>
-<p>The <code>-w</code> option wipes the <code>/data</code> partition on the device; this is useful for your first time flashing a particular device but is otherwise unnecessary.</p>
-<p>For more information about building for and running on actual hardware, see
-<a href="building-devices.html">Building for Devices.</a></p>
-<h3 id="emulate-an-android-device">Emulate an Android Device</h3>
-<p>The emulator is added to your path automatically by the build process. To run the emulator, type</p>
-<pre><code>$ emulator
-</code></pre>
-<h2 id="using-ccache">Using ccache</h2>
-<p>ccache is a compiler cache for C and C++ that can help make builds faster.
-In the root of the source tree, do the following:</p>
-<pre><code>$ export USE_CCACHE=1
-$ export CCACHE_DIR=/&lt;path_of_your_choice&gt;/.ccache
-$ prebuilts/misc/linux-x86/ccache/ccache -M 50G
-</code></pre>
-<p>The suggested cache size is 50-100G.</p>
-<p>On Linux, you can watch ccache being used by doing the following:</p>
-<pre><code>$ watch -n1 -d prebuilts/misc/linux-x86/ccache/ccache -s
-</code></pre>
-<p>On Mac OS, you should replace <code>linux-x86</code> with <code>darwin-x86</code>.</p>
-<p>When using Ice Cream Sandwich (4.0.x) or older, you should replace
-<code>prebuilts/misc</code> with <code>prebuilt</code>.</p>
-<h2 id="troubleshooting-common-build-errors">Troubleshooting Common Build Errors</h2>
-<h3 id="wrong-java-version">Wrong Java Version</h3>
-<p>If you are attempting to build a version of Android inconsistent with your
-version of Java, <code>make</code> will abort with a message such as</p>
-<pre><code>************************************************************
-You are attempting to build with the incorrect version
-of java.
 
-Your version is: WRONG_VERSION.
-The correct version is: RIGHT_VERSION.
+<p>You will want to look at the git log for the kernel binary in the device
+project that you are interested in.</p>
 
-Please follow the machine setup instructions at
-    https://source.android.com/source/download.html
-************************************************************
+<p>Device projects are of the form device/&lt;vendor&gt;/&lt;name&gt;.</p>
+<pre><code>$ git clone https://android.googlesource.com/device/ti/panda
+$ cd panda
+$ git log --max-count=1 kernel
 </code></pre>
-<p>This may be caused by:</p>
+
+<p>The commit message for the kernel binary contains a partial git log
+of the kernel sources that were used to build the binary in question.
+The first entry in the log is the most recent, i.e. the one used to
+build that kernel. You will need it at a later step.</p>
+
+
+<h2 id="id-version">Identifying kernel version</h2>
+<p>To determine the kernel version used in a particular system image, run the
+following command against the kernel file:</p>
+<pre><code>
+$ dd if=kernel bs=1 skip=$(LC_ALL=C grep -a -b -o $'\x1f\x8b\x08\x00\x00\x00\x00\x00' kernel | cut -d ':' -f 1) | zgrep -a 'Linux version'
+</code></pre>
+<p>For Nexus 5 (hammerhead), this can be accomplished with:</p>
+<pre><code>
+$ dd if=zImage-dtb bs=1 skip=$(LC_ALL=C od -Ad -x -w2 zImage-dtb | grep 8b1f | cut -d ' ' -f1 | head -1) | zgrep -a 'Linux version'
+</code></pre>
+
+
+<h2 id="downloading-sources">Downloading sources</h2>
+<p>Depending on which kernel you want,</p>
+<pre><code>$ git clone https://android.googlesource.com/kernel/common.git
+$ git clone https://android.googlesource.com/kernel/x86_64.git
+$ git clone https://android.googlesource.com/kernel/exynos.git
+$ git clone https://android.googlesource.com/kernel/goldfish.git
+$ git clone https://android.googlesource.com/kernel/msm.git
+$ git clone https://android.googlesource.com/kernel/omap.git
+$ git clone https://android.googlesource.com/kernel/samsung.git
+$ git clone https://android.googlesource.com/kernel/tegra.git
+</code></pre>
 <ul>
-<li>
-<p>Failing to install the correct JDK as specified in <a href="initializing.html">Initializing the Build Environment</a>.</p>
-</li>
-<li>
-<p>Another JDK previously installed appearing in your path. Prepend the correct JDK to the beginning of your PATH or remove the problematic JDK.</p>
-</li>
+<li>The <code>goldfish</code> project contains the kernel sources for the emulated
+platforms.</li>
+<li>The <code>msm</code> project has the sources for ADP1, ADP2, Nexus One, Nexus 4, Nexus 5, Nexus 6,
+and can be used as a starting point for work on Qualcomm MSM chipsets.</li>
+<li>The <code>omap</code> project is used for PandaBoard and Galaxy Nexus,
+and can be used as a starting point for work on TI OMAP chipsets.</li>
+<li>The <code>samsung</code> project is used for Nexus S,
+and can be used as a starting point for work on Samsung Hummingbird chipsets.</li>
+<li>The <code>tegra</code> project is for Xoom, Nexus 7, Nexus 9,
+and can be used as a starting point for work on NVIDIA Tegra chipsets.</li>
+<li>The <code>exynos</code> project has the kernel sources for Nexus 10,
+and can be used as a starting point for work on Samsung Exynos chipsets.</li>
+<li>The <code>x86_64</code> project has the kernel sources for Nexus Player,
+and can be used as a starting point for work on Intel x86_64 chipsets.</li>
 </ul>
-<h3 id="python-version-3">Python Version 3</h3>
-<p>Repo is built on particular functionality from Python 2.x and is unfortunately incompatible with Python 3.  In order to use repo, please install Python 2.x:</p>
-<pre><code>$ apt-get install python
+<h2 id="downloading-a-prebuilt-gcc">Downloading a prebuilt gcc</h2>
+<p>Ensure that the prebuilt toolchain is in your path.</p>
+<pre>$ export PATH=$(pwd)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin:$PATH</pre>
+
+or
+<pre>$ export PATH=$(pwd)/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6/bin:$PATH</pre>
+
+<p>On a linux host, if you don't have an Android source tree, you can download
+the prebuilt toolchain from:
+<pre>$ git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6</pre>
+
+<h2 id="building">Building</h2>
+<p>As an example, we would build the panda kernel using the following commands:</p>
+<pre><code>$ export ARCH=arm
+$ export SUBARCH=arm
+$ export CROSS_COMPILE=arm-eabi-
+$ cd omap
+$ git checkout &lt;commit_from_first_step&gt;
+$ make panda_defconfig
+$ make
 </code></pre>
-<h3 id="case-insensitive-filesystem">Case Insensitive Filesystem</h3>
-<p>If you are building on an HFS filesystem on Mac OS, you may encounter an error such as</p>
-<pre><code>************************************************************
-You are building on a case-insensitive filesystem.
-Please move your source tree to a case-sensitive filesystem.
-************************************************************
+<p>To build the tuna kernel, you may run the previous commands replacing all
+instances of "panda" with "tuna".</p>
+<p>
+The kernel binary is output as: `arch/arm/boot/zImage` It can be copied
+into the Android source tree in order to build the matching boot image.
+</p>
+<p>Or you can include the <code>TARGET_PREBUILT_KERNEL</code> variable while
+using <code>make bootimage</code> or any other make command line that builds a
+boot image.</p>
+<pre><code>
+$ export TARGET_PREBUILT_KERNEL=$your_kernel_path/arch/arm/boot/zImage
 </code></pre>
-<p>Please follow the instructions in <a href="initializing.html">Initializing the Build Environment</a> for creating a case-sensitive disk image.</p>
-<h3 id="no-usb-permission">No USB Permission</h3>
-<p>On most Linux systems, unprivileged users cannot access USB ports by default. If you see a permission denied error, follow the instructions
-<a href="initializing.html">Initializing the Build Environment</a> for configuring USB access.  </p>
-<p>If adb was already running and cannot connect to the device after
-getting those rules set up, it can be killed with <code>adb kill-server</code>.
-That will cause adb to restart with the new configuration.</p>
+<p>That variable is supported by all devices as it is set up via
+device/common/populate-new-device.sh</p>
 
     </div>
       
