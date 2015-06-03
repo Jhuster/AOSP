@@ -1,0 +1,325 @@
+01-02 13:00:01.731 I/Vold    (  199): Vold 2.1 (the revenge) firing up
+01-01 00:00:16.006 W/SystemServer(  733): System clock is before 1970; setting to 1970.
+01-02 00:00:00.060 I/SystemServer(  733): Entered the Android system server!
+01-02 00:00:03.082 I/SystemServer(  733): Waiting for installd to be ready.
+01-02 00:00:03.082 I/Installer(  733): connecting...
+01-02 00:00:03.082 I/SystemServer(  733): Enabled StrictMode logging for WM Looper
+01-02 00:00:03.082 I/SystemServer(  733): Power Manager
+01-02 00:00:03.082 I/SystemServer(  733): Activity Manager
+01-02 00:00:03.102 I/ActivityManager(  733): Memory class: 96
+01-02 00:00:03.132 W/UsageStats(  733): Usage stats version changed; dropping
+01-02 00:00:03.212 I/UiThread(  733): Enabled StrictMode logging for UI thread
+01-02 00:00:03.222 I/IntentFirewall(  733): Read new rules (A:0 B:0 S:0)
+01-02 00:00:03.222 I/ActivityManager(  733): Enabled StrictMode logging for AThread's Looper
+01-02 00:00:03.222 I/SystemServer(  733): Display Manager
+01-02 00:00:03.222 I/SystemServer(  733): Telephony Registry
+01-02 00:00:03.232 I/DisplayManagerService(  733): Display device added: DisplayDeviceInfo{"Built-in Screen": 480 x 864, 60.0 fps, density 160, 160.421 x 160.186 dpi, touch INTERNAL, rotation 0, type BUILT_IN, FLAG_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS}
+01-02 00:00:03.232 I/SystemServer(  733): Scheduling Policy
+01-02 00:00:03.232 I/SystemServer(  733): Package Manager
+01-02 00:00:03.232 W/PackageManager(  733): No security bridge jar found, using default
+01-02 00:00:03.342 D/SELinuxMMAC(  733): Couldn't find install policy /data/security/mac_permissions.xml
+01-02 00:00:03.342 D/SELinuxMMAC(  733): Using install policy file /system/etc/security/mac_permissions.xml
+01-02 00:00:03.482 W/PackageManager(  733): Library not found: /system/framework/com.android.future.usb.accessory.jar
+01-02 00:00:03.632 W/PackageParser(  733): No actions in intent filter at /system/priv-app/Contacts.apk Binary XML file line #375
+01-02 00:00:03.672 W/PackageParser(  733): No actions in intent filter at /system/priv-app/Dialer.apk Binary XML file line #165
+01-02 00:00:03.913 W/PackageParser(  733): No actions in intent filter at /system/app/BTTestApp.apk Binary XML file line #61
+01-02 00:00:03.933 W/PackageParser(  733): No actions in intent filter at /system/app/Bluetooth.apk Binary XML file line #226
+01-02 00:00:03.943 W/PackageParser(  733): Unknown element under <application>: uses-feature at /system/app/BluetoothExt.apk Binary XML file line #55
+01-02 00:00:03.943 W/PackageParser(  733): No actions in intent filter at /system/app/BluetoothExt.apk Binary XML file line #82
+01-02 00:00:03.943 W/PackageParser(  733): No actions in intent filter at /system/app/BluetoothExt.apk Binary XML file line #106
+01-02 00:00:03.943 W/PackageParser(  733): No actions in intent filter at /system/app/BluetoothExt.apk Binary XML file line #130
+01-02 00:00:03.943 W/PackageParser(  733): No actions in intent filter at /system/app/BluetoothExt.apk Binary XML file line #157
+01-02 00:00:04.153 W/PackageParser(  733): Unknown element under <application>: permission at /system/app/Gallery2.apk Binary XML file line #248
+01-02 00:00:04.153 W/PackageParser(  733): Unknown element under <application>: permission at /system/app/Gallery2.apk Binary XML file line #251
+01-02 00:00:04.413 W/PackageManager(  733): Package com.android.gallery3d desires unavailable shared library com.google.android.media.effects; ignoring!
+01-02 00:00:04.413 I/PackageManager(  733): Time to scan packages: 0.931 seconds
+01-02 00:00:04.413 W/PackageManager(  733): Removing dangling permission: com.qualcomm.permission.ACCESS_QCOM_QMI from package null
+01-02 00:00:04.413 W/PackageManager(  733): Removing dangling permission: com.qualcomm.permission.INTERFACE_RADIO from package null
+01-02 00:00:04.413 W/PackageManager(  733): Removing dangling permission: com.qualcomm.permission.INTERFACE_NETRAW from package null
+01-02 00:00:04.413 W/PackageManager(  733): Removing dangling permission: com.qualcomm.permission.IZAT from package null
+01-02 00:00:04.413 W/PackageManager(  733): Removing dangling permission: com.qualcomm.permission.READ_DHCP_INFO from package null
+01-02 00:00:04.413 W/PackageManager(  733): Removing dangling permission: com.qualcomm.permission.INTERFACE_DIAG from package null
+01-02 00:00:04.413 W/PackageManager(  733): Not granting permission android.permission.GLOBAL_SEARCH to package com.android.quicksearchbox (protectionLevel=18 flags=0x8be45)
+01-02 00:00:04.413 W/PackageManager(  733): Unknown permission com.google.android.gallery3d.permission.GALLERY_PROVIDER in package com.android.bluetooth
+01-02 00:00:04.413 W/PackageManager(  733): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.calendar
+01-02 00:00:04.413 W/PackageManager(  733): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl in package com.android.providers.calendar
+01-02 00:00:04.423 W/PackageManager(  733): Unknown permission com.qualcomm.permission.IZAT in package com.qualcomm.msapu
+01-02 00:00:04.423 W/PackageManager(  733): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.calendar
+01-02 00:00:04.423 W/PackageManager(  733): Not granting permission android.permission.ACCESS_DOWNLOAD_MANAGER to package com.android.browser (protectionLevel=18 flags=0x9be45)
+01-02 00:00:04.423 W/PackageManager(  733): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x9be45)
+01-02 00:00:04.423 W/PackageManager(  733): Unknown permission com.qualcomm.permission.IZAT in package com.qualcomm.msapm
+01-02 00:00:04.423 W/PackageManager(  733): Not granting permission android.permission.BIND_WALLPAPER to package com.android.camera2 (protectionLevel=18 flags=0x58bc45)
+01-02 00:00:04.423 W/PackageManager(  733): Unknown permission android.permission.INSTALL_DRM in package com.android.mms
+01-02 00:00:04.423 W/PackageManager(  733): Unknown permission android.permission.MMS_PUSH in package org.codeaurora.bluetooth
+01-02 00:00:04.423 W/PackageManager(  733): Unknown permission com.google.android.gallery3d.permission.PICASA_STORE in package com.android.dreams.phototable
+01-02 00:00:04.423 W/PackageManager(  733): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+01-02 00:00:04.423 W/PackageManager(  733): Not granting permission android.permission.DELETE_PACKAGES to package com.svox.pico (protectionLevel=18 flags=0x8be45)
+01-02 00:00:04.433 W/PackageManager(  733): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0x48be45)
+01-02 00:00:04.433 W/PackageManager(  733): Unknown permission com.qualcomm.permission.IZAT in package com.qualcomm.services.location
+01-02 00:00:04.433 W/PackageManager(  733): Unknown permission com.qualcomm.permission.IZAT in package com.qualcomm.location.XT
+01-02 00:00:04.623 I/SystemServer(  733): Entropy Mixer
+01-02 00:00:04.623 I/EntropyMixer(  733): Writing entropy...
+01-02 00:00:04.653 I/SystemServer(  733): User Service
+01-02 00:00:04.653 I/SystemServer(  733): Account Manager
+01-02 00:00:04.663 I/SystemServer(  733): Content Manager
+01-02 00:00:04.663 I/SystemServer(  733): System Content Providers
+01-02 00:00:04.703 I/SystemServer(  733): Lights Service
+01-02 00:00:04.703 I/SystemServer(  733): Battery Service
+01-02 00:00:04.713 I/SystemServer(  733): Vibrator Service
+01-02 00:00:04.713 I/SystemServer(  733): Consumer IR Service
+01-02 00:00:04.723 I/SystemServer(  733): Alarm Manager
+01-02 00:00:04.723 I/SystemServer(  733): Init Watchdog
+01-02 00:00:04.723 I/SystemServer(  733): Input Manager
+01-02 00:00:04.723 I/InputManager(  733): Initializing input manager, mUseDevInputEventForAudioJack=true
+01-02 00:00:04.734 I/SystemServer(  733): Window Manager
+01-02 00:00:04.744 I/WindowManager(  733): No existing display settings /data/system/display_settings.xml; starting empty
+01-02 00:00:04.774 I/WindowManager(  733): No keyguard interface!
+01-02 00:00:04.774 I/InputManager(  733): Starting input manager
+01-02 00:00:04.774 I/SystemServer(  733): Bluetooth Manager Service
+01-02 00:00:04.784 I/SystemServer(  733): Input Method Service
+01-02 00:00:04.784 W/InputMethodManagerService(  733): Couldn't create dir.: /data/system/inputmethod
+01-02 00:00:04.814 I/SystemServer(  733): Accessibility Manager
+01-02 00:00:04.854 I/ActivityManager(  733): Config changes=1df8 {1.0 ?mcc?mnc en_US ldltr sw480dp w480dp h864dp 160dpi lrg long port ?uimode ?night -touch -keyb/v/h -nav/h s.2}
+01-02 00:00:04.854 I/ActivityManager(  733): Config changes=408 {1.0 ?mcc?mnc en_US ldltr sw480dp w480dp h791dp 160dpi lrg long port ?uimode ?night finger -keyb/v/h -nav/h s.3}
+01-02 00:00:04.854 I/SystemServer(  733): Mount Service
+01-02 00:00:04.864 D/MountService(  733): got storage path: /storage/sdcard0 description: Internal storage primary: true removable: false emulated: true mtpReserve: 100 allowMassStorage: false maxFileSize: 0
+01-02 00:00:04.864 D/MountService(  733): addVolumeLocked() StorageVolume:
+01-02 00:00:04.864 D/MountService(  733):     mStorageId=65537 mPath=/storage/emulated/0 mDescriptionId=17040668 
+01-02 00:00:04.864 D/MountService(  733):     mPrimary=true mRemovable=false mEmulated=true mMtpReserveSpace=100 
+01-02 00:00:04.864 D/MountService(  733):     mAllowMassStorage=false mMaxFileSize=0 mOwner=UserHandle{0} mUuid=null 
+01-02 00:00:04.864 D/MountService(  733):     mUserLabel=null mState=null 
+01-02 00:00:04.864 D/MountService(  733): got storage path: /storage/sdcard1 description: SD card primary: false removable: true emulated: false mtpReserve: 0 allowMassStorage: true maxFileSize: 0
+01-02 00:00:04.864 D/MountService(  733): addVolumeLocked() StorageVolume:
+01-02 00:00:04.864 D/MountService(  733):     mStorageId=0 mPath=/storage/sdcard1 mDescriptionId=17040669 mPrimary=false 
+01-02 00:00:04.864 D/MountService(  733):     mRemovable=true mEmulated=false mMtpReserveSpace=0 mAllowMassStorage=true 
+01-02 00:00:04.864 D/MountService(  733):     mMaxFileSize=0 mOwner=null mUuid=null mUserLabel=null mState=null 
+01-02 00:00:04.864 I/SystemServer(  733): LockSettingsService
+01-02 00:00:04.864 I/SystemServer(  733): Device Policy
+01-02 00:00:04.864 I/SystemServer(  733): Status Bar
+01-02 00:00:04.864 I/SystemServer(  733): Clipboard Service
+01-02 00:00:04.864 W/ClipboardService(  733): No security bridge jar found, using default
+01-02 00:00:04.864 I/SystemServer(  733): NetworkManagement Service
+01-02 00:00:04.874 I/SystemServer(  733): Text Service Manager Service
+01-02 00:00:04.874 I/SystemServer(  733): NetworkStats Service
+01-02 00:00:04.884 I/SystemServer(  733): NetworkPolicy Service
+01-02 00:00:04.884 I/SystemServer(  733): Wi-Fi P2pService
+01-02 00:00:04.894 D/MountService(  733): volume state changed for /storage/sdcard1 (unmounted -> removed)
+01-02 00:00:04.894 W/PackageManager(  733): Not granting permission android.permission.GLOBAL_SEARCH to package com.android.quicksearchbox (protectionLevel=18 flags=0x8be45)
+01-02 00:00:04.894 W/PackageManager(  733): Unknown permission com.google.android.gallery3d.permission.GALLERY_PROVIDER in package com.android.bluetooth
+01-02 00:00:04.894 W/PackageManager(  733): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.calendar
+01-02 00:00:04.894 W/PackageManager(  733): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl in package com.android.providers.calendar
+01-02 00:00:04.894 W/PackageManager(  733): Unknown permission com.qualcomm.permission.IZAT in package com.qualcomm.msapu
+01-02 00:00:04.894 W/PackageManager(  733): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.calendar
+01-02 00:00:04.894 W/PackageManager(  733): Not granting permission android.permission.ACCESS_DOWNLOAD_MANAGER to package com.android.browser (protectionLevel=18 flags=0x9be45)
+01-02 00:00:04.894 W/PackageManager(  733): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x9be45)
+01-02 00:00:04.894 W/PackageManager(  733): Unknown permission com.qualcomm.permission.IZAT in package com.qualcomm.msapm
+01-02 00:00:04.894 W/PackageManager(  733): Not granting permission android.permission.BIND_WALLPAPER to package com.android.camera2 (protectionLevel=18 flags=0x58bc45)
+01-02 00:00:04.894 W/PackageManager(  733): Unknown permission android.permission.INSTALL_DRM in package com.android.mms
+01-02 00:00:04.894 W/PackageManager(  733): Unknown permission android.permission.MMS_PUSH in package org.codeaurora.bluetooth
+01-02 00:00:04.894 W/PackageManager(  733): Unknown permission com.google.android.gallery3d.permission.PICASA_STORE in package com.android.dreams.phototable
+01-02 00:00:04.894 W/PackageManager(  733): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+01-02 00:00:04.904 W/PackageManager(  733): Not granting permission android.permission.DELETE_PACKAGES to package com.svox.pico (protectionLevel=18 flags=0x8be45)
+01-02 00:00:04.904 W/PackageManager(  733): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0x48be45)
+01-02 00:00:04.904 W/PackageManager(  733): Unknown permission com.qualcomm.permission.IZAT in package com.qualcomm.services.location
+01-02 00:00:04.904 W/PackageManager(  733): Unknown permission com.qualcomm.permission.IZAT in package com.qualcomm.location.XT
+01-02 00:00:04.914 I/SystemServer(  733): Wi-Fi Service
+01-02 00:00:05.034 I/SystemServer(  733): QcConnectivity Service
+01-02 00:00:05.044 D/QcConnectivityService(  733): QcConnectivityService starting up
+01-02 00:00:05.044 D/QcConnectivityService(  733): wifiOnly=true
+01-02 00:00:05.044 D/QcConnectivityService(  733): networkAttributes - ignoring mobile as this dev is wifiOnly 0
+01-02 00:00:05.044 D/QcConnectivityService(  733): networkAttributes - ignoring mobile as this dev is wifiOnly 2
+01-02 00:00:05.044 D/QcConnectivityService(  733): networkAttributes - ignoring mobile as this dev is wifiOnly 3
+01-02 00:00:05.044 D/QcConnectivityService(  733): networkAttributes - ignoring mobile as this dev is wifiOnly 4
+01-02 00:00:05.044 D/QcConnectivityService(  733): networkAttributes - ignoring mobile as this dev is wifiOnly 5
+01-02 00:00:05.044 D/QcConnectivityService(  733): networkAttributes - ignoring mobile as this dev is wifiOnly 10
+01-02 00:00:05.044 D/QcConnectivityService(  733): networkAttributes - ignoring mobile as this dev is wifiOnly 11
+01-02 00:00:05.044 D/QcConnectivityService(  733): networkAttributes - ignoring mobile as this dev is wifiOnly 12
+01-02 00:00:05.044 E/QcConnectivityService(  733): Ignoring protectedNetwork 10
+01-02 00:00:05.044 E/QcConnectivityService(  733): Ignoring protectedNetwork 11
+01-02 00:00:05.044 E/QcConnectivityService(  733): Ignoring protectedNetwork 12
+01-02 00:00:05.044 E/QcConnectivityService(  733): Ignoring protectedNetwork 14
+01-02 00:00:05.054 W/ContextImpl(  733): Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1551 android.bluetooth.BluetoothPan.doBind:148 android.bluetooth.BluetoothPan.<init>:141 android.bluetooth.BluetoothAdapter.getProfileProxy:1193 android.bluetooth.BluetoothTetheringDataTracker.startMonitoring:116 
+01-02 00:00:05.074 W/QcConnectivityService(  733): Created CNE Service
+01-02 00:00:05.074 I/WifiService(  733): WifiService starting up with Wi-Fi disabled
+01-02 00:00:05.084 I/SystemServer(  733): Network Service Discovery Service
+01-02 00:00:05.084 D/NsdService(  733): Network service discovery enabled true
+01-02 00:00:05.084 I/SystemServer(  733): UpdateLock Service
+01-02 00:00:05.164 I/SystemServer(  733): Notification Manager
+01-02 00:00:05.164 I/SystemServer(  733): Device Storage Monitor
+01-02 00:00:05.174 I/SystemServer(  733): Location Manager
+01-02 00:00:05.174 I/SystemServer(  733): Country Detector
+01-02 00:00:05.174 I/SystemServer(  733): Search Service
+01-02 00:00:05.174 I/SystemServer(  733): DropBox Service
+01-02 00:00:05.174 I/SystemServer(  733): Wallpaper Service
+01-02 00:00:05.174 I/SystemServer(  733): Audio Service
+01-02 00:00:05.244 I/SystemServer(  733): Dock Observer
+01-02 00:00:05.244 W/DockObserver(  733): This kernel does not have dock station support
+01-02 00:00:05.244 I/SystemServer(  733): Wired Accessory Manager
+01-02 00:00:05.244 I/SystemServer(  733): USB Service
+01-02 00:00:05.324 I/SystemServer(  733): Serial Service
+01-02 00:00:05.324 I/SystemServer(  733): Twilight Service
+01-02 00:00:05.324 I/SystemServer(  733): UI Mode Manager Service
+01-02 00:00:05.324 I/SystemServer(  733): Backup Service
+01-02 00:00:05.324 V/BackupManagerService(  733): Initializing package tracking
+01-02 00:00:05.324 V/BackupManagerService(  733): No ancestral data
+01-02 00:00:05.324 V/BackupManagerService(  733): addPackageParticipantsLocked: all
+01-02 00:00:05.324 I/BackupManagerService(  733): Scheduling backup for new app com.android.calendar
+01-02 00:00:05.324 D/BackupManagerService(  733): Now staging backup of com.android.calendar
+01-02 00:00:05.394 I/BackupManagerService(  733): Scheduling backup for new app com.android.browser
+01-02 00:00:05.394 D/BackupManagerService(  733): Now staging backup of com.android.browser
+01-02 00:00:05.404 I/BackupManagerService(  733): Scheduling backup for new app com.android.providers.userdictionary
+01-02 00:00:05.404 D/BackupManagerService(  733): Now staging backup of com.android.providers.userdictionary
+01-02 00:00:05.424 I/BackupManagerService(  733): Scheduling backup for new app com.android.sharedstoragebackup
+01-02 00:00:05.424 D/BackupManagerService(  733): Now staging backup of com.android.sharedstoragebackup
+01-02 00:00:05.434 I/BackupManagerService(  733): Scheduling backup for new app android
+01-02 00:00:05.434 D/BackupManagerService(  733): Now staging backup of android
+01-02 00:00:05.444 I/BackupManagerService(  733): Scheduling backup for new app com.android.dialer
+01-02 00:00:05.454 D/BackupManagerService(  733): Now staging backup of com.android.dialer
+01-02 00:00:05.464 I/BackupManagerService(  733): Scheduling backup for new app com.android.providers.settings
+01-02 00:00:05.464 D/BackupManagerService(  733): Now staging backup of com.android.providers.settings
+01-02 00:00:05.484 V/BackupManagerService(  733): Starting with transport android/com.android.internal.backup.LocalTransport
+01-02 00:00:05.484 V/BackupManagerService(  733): Found transports: 1
+01-02 00:00:05.484 I/BackupManagerService(  733): Binding to transport host ComponentInfo{android/com.android.internal.backup.LocalTransportService}
+01-02 00:00:05.484 I/BackupManagerService(  733): Found stale backup journal, scheduling
+01-02 00:00:05.484 I/BackupManagerService(  733):   com.android.calendar
+01-02 00:00:05.484 I/BackupManagerService(  733):   com.android.browser
+01-02 00:00:05.484 I/BackupManagerService(  733):   com.android.providers.userdictionary
+01-02 00:00:05.484 I/BackupManagerService(  733):   com.android.sharedstoragebackup
+01-02 00:00:05.484 I/BackupManagerService(  733):   android
+01-02 00:00:05.484 I/BackupManagerService(  733):   com.android.dialer
+01-02 00:00:05.484 I/BackupManagerService(  733):   com.android.providers.settings
+01-02 00:00:05.484 I/BackupManagerService(  733): Backup enabled => false
+01-02 00:00:05.484 I/BackupManagerService(  733): Opting out of backup
+01-02 00:00:05.484 I/SystemServer(  733): AppWidget Service
+01-02 00:00:05.494 I/SystemServer(  733): Recognition Service
+01-02 00:00:05.494 I/SystemServer(  733): DiskStats Service
+01-02 00:00:05.494 I/SystemServer(  733): SamplingProfiler Service
+01-02 00:00:05.494 I/SystemServer(  733): NetworkTimeUpdateService
+01-02 00:00:05.494 I/SystemServer(  733): CommonTimeManagementService
+01-02 00:00:05.494 I/SystemServer(  733): CertBlacklister
+01-02 00:00:05.494 I/SystemServer(  733): Dreams Service
+01-02 00:00:05.494 I/SystemServer(  733): Assets Atlas Service
+01-02 00:00:05.504 I/SystemServer(  733): IdleMaintenanceService
+01-02 00:00:05.504 I/SystemServer(  733): Print Service
+01-02 00:00:05.504 I/SystemServer(  733): Media Router Service
+01-02 00:00:05.594 I/ActivityManager(  733): Start proc com.android.systemui for service com.android.keyguard/.KeyguardService: pid=795 uid=10007 gids={50007, 1028, 1015, 1035, 3002, 3001}
+01-02 00:00:05.664 I/AppOps  (  733): Pruning old package media/1013: new uid=-1
+01-02 00:00:05.664 I/ActivityManager(  733): System now ready
+01-02 00:00:05.684 I/SystemServer(  733): Making services ready
+01-02 00:00:05.694 D/NetworkManagementService(  733): enabling bandwidth control
+01-02 00:00:05.694 W/MountService(  733): Duplicate state transition (mounted -> mounted) for /storage/emulated/0
+01-02 00:00:05.885 I/StatusBarManagerService(  733): registerStatusBar bar=com.android.internal.statusbar.IStatusBar$Stub$Proxy@41be0498
+01-02 00:00:06.285 I/ActivityManager(  733): Start proc android.process.acore for content provider com.android.providers.contacts/.ContactsProvider2: pid=864 uid=10002 gids={50002, 3003, 1028, 1015}
+01-02 00:00:06.335 V/KeyguardTouchDelegate(  795): Connected to keyguard
+01-02 00:00:06.435 I/ActivityManager(  733): Start proc android.process.media for broadcast com.android.providers.media/.MtpReceiver: pid=886 uid=10005 gids={50005, 1028, 1015, 1023, 1024, 2001, 3003, 3007}
+01-02 00:00:06.435 I/ActivityManager(  733): Config changes=200 {1.0 ?mcc?mnc en_US ldltr sw480dp w480dp h791dp 160dpi lrg long port finger -keyb/v/h -nav/h s.4}
+01-02 00:00:06.445 W/RecognitionManagerService(  733): no available voice recognition services found for user 0
+01-02 00:00:06.495 W/InputMethodManagerService(  733): Ignoring setImeWindowStatus of uid 1000 token: null
+01-02 00:00:06.535 I/ActivityManager(  733): Start proc com.android.inputmethod.latin for service com.android.inputmethod.latin/.LatinIME: pid=902 uid=10035 gids={50035, 1028, 1015}
+01-02 00:00:06.535 V/InputMethodManagerService(  733): Adding window token: android.os.Binder@41a06fe8
+01-02 00:00:06.906 W/LocationManagerService(  733): no network location provider found
+01-02 00:00:06.906 E/LocationManagerService(  733): no fused location provider found
+01-02 00:00:06.906 E/LocationManagerService(  733): java.lang.IllegalStateException: Location service needs a fused location provider
+01-02 00:00:06.906 E/LocationManagerService(  733): 	at com.android.server.LocationManagerService.loadProvidersLocked(LocationManagerService.java:417)
+01-02 00:00:06.906 E/LocationManagerService(  733): 	at com.android.server.LocationManagerService.systemRunning(LocationManagerService.java:247)
+01-02 00:00:06.906 E/LocationManagerService(  733): 	at com.android.server.ServerThread$2.run(SystemServer.java:1069)
+01-02 00:00:06.906 E/LocationManagerService(  733): 	at com.android.server.am.ActivityManagerService.systemReady(ActivityManagerService.java:9391)
+01-02 00:00:06.906 E/LocationManagerService(  733): 	at com.android.server.ServerThread.initAndLoop(SystemServer.java:981)
+01-02 00:00:06.906 E/LocationManagerService(  733): 	at com.android.server.SystemServer.main(SystemServer.java:1239)
+01-02 00:00:06.906 E/LocationManagerService(  733): 	at java.lang.reflect.Method.invokeNative(Native Method)
+01-02 00:00:06.906 E/LocationManagerService(  733): 	at java.lang.reflect.Method.invoke(Method.java:515)
+01-02 00:00:06.906 E/LocationManagerService(  733): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:780)
+01-02 00:00:06.906 E/LocationManagerService(  733): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:596)
+01-02 00:00:06.906 E/LocationManagerService(  733): 	at dalvik.system.NativeStart.main(Native Method)
+01-02 00:00:06.906 E/LocationManagerService(  733): no geocoder provider found
+01-02 00:00:06.916 E/LocationManagerService(  733): No FusedProvider found.
+01-02 00:00:06.916 E/LocationManagerService(  733): no geofence provider found
+01-02 00:00:06.946 I/ActivityManager(  733): Start proc com.android.phone for added application com.android.phone: pid=933 uid=1001 gids={41001, 3004, 3009, 3005, 1006, 3002, 3001, 3003, 1028, 1015}
+01-02 00:00:06.966 I/ActivityManager(  733): Start proc com.qualcomm.services.location for added application com.qualcomm.services.location: pid=940 uid=1000 gids={41000, 1028, 1015, 3003, 3005, 3002, 3001}
+01-02 00:00:07.006 I/ActivityManager(  733): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.android.launcher/com.android.launcher2.Launcher} from pid 0
+01-02 00:00:07.026 I/ActivityManager(  733): Start proc com.android.launcher for activity com.android.launcher/com.android.launcher2.Launcher: pid=964 uid=10008 gids={50008}
+01-02 00:00:07.026 I/SystemServer(  733): Enabled StrictMode for system server main thread.
+01-02 00:00:07.056 W/InputMethodManagerService(  733): Focus gain on non-focused client android.view.inputmethod.InputMethodManager$1@41a185f0 (uid=1000 pid=733)
+01-02 00:00:07.276 V/BackupManagerService(  733): Connected to transport ComponentInfo{android/com.android.internal.backup.LocalTransportService}
+01-02 00:00:07.276 V/BackupManagerService(  733): Registering transport android/com.android.internal.backup.LocalTransportService::android/com.android.internal.backup.LocalTransport = com.android.internal.backup.LocalTransport@41d3c968
+01-02 00:00:07.366 I/ActivityManager(  733): Start proc com.android.printspooler for service com.android.printspooler/.PrintSpoolerService: pid=1002 uid=10048 gids={50048}
+01-02 00:00:07.526 I/ActivityManager(  733): Start proc com.android.smspush for service com.android.smspush/.WapPushManager: pid=1024 uid=10055 gids={50055}
+01-02 00:00:07.726 I/PackageManager(  733): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+01-02 00:00:07.746 I/PackageManager(  733): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+01-02 00:00:07.766 I/PackageManager(  733): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+01-02 00:00:07.796 I/ActivityManager(  733): Start proc com.android.settings for broadcast com.android.settings/.widget.SettingsAppWidgetProvider: pid=1047 uid=1000 gids={41000, 1028, 1015, 3003, 3005, 3002, 3001}
+01-02 00:00:07.796 I/PackageManager(  733): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+01-02 00:00:07.857 W/ActivityManager(  733): Unable to start service Intent { act=org.codeaurora.ims.IImsService } U=0: not found
+01-02 00:00:08.477 W/ContextImpl( 1047): Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1551 android.content.ContextWrapper.bindService:517 android.bluetooth.BluetoothInputDevice.doBind:256 android.bluetooth.BluetoothInputDevice.<init>:249 android.bluetooth.BluetoothAdapter.getProfileProxy:1190 
+01-02 00:00:08.517 W/ContextImpl( 1047): Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1551 android.content.ContextWrapper.bindService:517 android.bluetooth.BluetoothPan.doBind:148 android.bluetooth.BluetoothPan.<init>:141 android.bluetooth.BluetoothAdapter.getProfileProxy:1193 
+01-02 00:00:08.517 W/ContextImpl( 1047): Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1551 android.content.ContextWrapper.bindService:517 android.bluetooth.BluetoothMap.doBind:109 android.bluetooth.BluetoothMap.<init>:102 android.bluetooth.BluetoothAdapter.getProfileProxy:1205 
+01-02 00:00:08.547 W/ContextImpl( 1047): Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1551 android.content.ContextWrapper.bindService:517 android.bluetooth.BluetoothPbap.doBind:164 android.bluetooth.BluetoothPbap.<init>:157 com.android.settings.bluetooth.PbapServerProfile.<init>:68 
+01-02 00:00:08.607 I/ActivityManager(  733): Start proc com.android.music for broadcast com.android.music/.MediaButtonIntentReceiver: pid=1087 uid=10039 gids={50039, 3003, 1028, 1015, 3002}
+01-02 00:00:09.128 I/ActivityManager(  733): Start proc com.android.dialer for broadcast com.android.dialer/.calllog.CallLogReceiver: pid=1178 uid=10004 gids={50004, 3003, 1028, 1015, 3009, 3010}
+01-02 00:00:09.218 W/ContextImpl(  733): Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1551 android.bluetooth.BluetoothHeadset.doBind:283 android.bluetooth.BluetoothHeadset.<init>:276 android.bluetooth.BluetoothAdapter.getProfileProxy:1184 android.media.AudioService.getBluetoothHeadset:2261 
+01-02 00:00:09.228 W/ContextImpl(  733): Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1551 android.bluetooth.BluetoothA2dp.doBind:165 android.bluetooth.BluetoothA2dp.<init>:158 android.bluetooth.BluetoothAdapter.getProfileProxy:1187 android.media.AudioService$AudioServiceBroadcastReceiver.onReceive:4183 
+01-02 00:00:09.228 V/WiredAccessoryManager(  733): notifyWiredAccessoryChanged: when=0 bits= mask=14
+01-02 00:00:09.228 V/WiredAccessoryManager(  733): newName=h2w newState=0 headsetState=0 prev headsetState=0
+01-02 00:00:09.228 V/WiredAccessoryManager(  733): init()
+01-02 00:00:09.308 I/PowerManagerService(  733): Boot animation finished.
+01-02 00:00:09.328 I/ActivityManager(  733): Start proc com.android.providers.calendar for broadcast com.android.providers.calendar/.CalendarReceiver: pid=1253 uid=10001 gids={50001, 3003, 1028, 1015}
+01-02 00:00:09.368 I/BootReceiver(  733): Copying audit failures to DropBox
+01-02 00:00:09.368 I/BootReceiver(  733): Checking for fsck errors
+01-02 00:00:09.488 I/ActivityManager(  733): Delay finish: com.android.providers.media/.MediaScannerReceiver
+01-02 00:00:09.959 I/ActivityManager(  733): Resuming delayed broadcast
+01-02 00:00:09.969 I/ActivityManager(  733): Start proc com.android.mms for broadcast com.android.mms/.transaction.MmsSystemEventReceiver: pid=1307 uid=10009 gids={50009, 3003, 1028, 1015}
+01-02 00:00:10.029 D/CountryDetector(  733): The first listener is added
+01-02 00:00:10.099 I/ActivityManager(  733): Delay finish: com.android.mms/.transaction.MmsSystemEventReceiver
+01-02 00:00:10.489 I/ActivityManager(  733): Resuming delayed broadcast
+01-02 00:00:10.499 I/ActivityManager(  733): Delay finish: com.android.mms/.transaction.SmsReceiver
+01-02 00:00:10.559 I/ActivityManager(  733): Resuming delayed broadcast
+01-02 00:00:10.569 I/ActivityManager(  733): Start proc com.android.onetimeinitializer for broadcast com.android.onetimeinitializer/.OneTimeInitializerReceiver: pid=1339 uid=10011 gids={50011}
+01-02 00:00:10.609 I/ActivityManager(  733): Delay finish: com.android.onetimeinitializer/.OneTimeInitializerReceiver
+01-02 00:00:10.629 I/ActivityManager(  733): Resuming delayed broadcast
+01-02 00:00:10.669 I/ActivityManager(  733): Start proc com.android.voicedialer for broadcast com.android.voicedialer/.VoiceDialerReceiver: pid=1354 uid=10014 gids={50014, 3002}
+01-02 00:00:10.749 I/ActivityManager(  733): Start proc com.qualcomm.cabl for broadcast com.qualcomm.cabl/.CABLReceiver: pid=1367 uid=1000 gids={41000, 1028, 1015, 3003, 3005, 3002, 3001}
+01-02 00:00:10.809 W/ContextImpl( 1367): Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1487 android.content.ContextWrapper.startService:494 android.content.ContextWrapper.startService:494 com.qualcomm.cabl.CABLReceiver.onReceive:30 android.app.ActivityThread.handleReceiver:2422 
+01-02 00:00:10.809 I/ActivityManager(  733): Delay finish: com.qualcomm.cabl/.CABLReceiver
+01-02 00:00:10.880 I/ActivityManager(  733): Resuming delayed broadcast
+01-02 00:00:10.900 I/ActivityManager(  733): Start proc com.android.calendar for broadcast com.android.calendar/.alerts.AlertReceiver: pid=1387 uid=10021 gids={50021, 3003}
+01-02 00:00:11.000 I/ActivityManager(  733): Delay finish: com.android.calendar/.alerts.AlertReceiver
+01-02 00:00:19.318 I/PowerManagerService(  733): Going to sleep due to screen timeout...
+01-02 00:00:19.968 I/WindowManager(  733): Lock screen displayed!
+01-02 00:00:23.792 I/ActivityManager(  733): Waited long enough for: ServiceRecord{41d39f60 u0 com.android.music/.MediaPlaybackService}
+01-02 00:00:23.792 I/ActivityManager(  733): Resuming delayed broadcast
+01-02 00:00:23.852 I/ActivityManager(  733): Start proc com.android.cellbroadcastreceiver for broadcast com.android.cellbroadcastreceiver/.CellBroadcastReceiver: pid=1442 uid=10023 gids={50023}
+01-02 00:00:24.182 I/ActivityManager(  733): Start proc com.android.deskclock for broadcast com.android.deskclock/.AlarmInitReceiver: pid=1456 uid=10025 gids={50025, 1028}
+01-02 00:00:24.563 I/ActivityManager(  733): Start proc com.android.email for broadcast com.android.email/.service.EmailBroadcastReceiver: pid=1476 uid=10027 gids={50027, 3003, 1028, 1015}
+01-02 00:00:24.713 D/ActivityThread( 1476): Loading provider com.android.email.provider;com.android.email.notifier: com.android.email.provider.EmailProvider
+01-02 00:00:24.733 D/ActivityThread( 1476): Loading provider com.android.email.provider;com.android.email.notifier: com.android.email.provider.EmailProvider
+01-02 00:00:24.753 I/ActivityManager(  733): Delay finish: com.android.email/.service.EmailBroadcastReceiver
+01-02 00:00:24.993 W/ActivityManager(  733): Unable to start service Intent { cmp=com.android.email/.service.AttachmentDownloadService } U=0: not found
+01-02 00:00:24.993 W/ActivityManager(  733): Unable to start service Intent { cmp=com.android.email/.service.AttachmentDownloadService } U=0: not found
+01-02 00:00:24.993 W/ActivityManager(  733): Unable to start service Intent { cmp=com.android.email/.service.AttachmentDownloadService } U=0: not found
+01-02 00:00:25.033 I/ActivityManager(  733): Delaying start of: ServiceRecord{41d376e0 u0 com.android.exchange/.service.EmailSyncAdapterService}
+01-02 00:00:25.063 I/ActivityManager(  733): Start proc com.android.exchange for service com.android.exchange/.service.EmailSyncAdapterService: pid=1499 uid=10028 gids={50028, 3003, 1028, 1015}
+01-02 00:00:25.093 I/ActivityManager(  733): Waited long enough for: ServiceRecord{41d36b60 u0 com.android.mms/.transaction.TransactionService}
+01-02 00:00:25.093 I/ActivityManager(  733): Resuming delayed broadcast
+01-02 00:00:25.123 I/ActivityManager(  733): Start proc com.qualcomm.rcsimsbootstraputil for broadcast com.qualcomm.rcsimsbootstraputil/.QrcsImsSettingsBootReceiver: pid=1512 uid=1001 gids={41001, 3004, 3009, 3005, 1006, 3002, 3001, 3003, 1028, 1015}
+01-02 00:00:25.163 I/ActivityManager(  733): Delay finish: com.qualcomm.rcsimsbootstraputil/.QrcsImsSettingsBootReceiver
+01-02 00:00:25.234 I/ActivityManager(  733): Resuming delayed broadcast
+01-02 00:00:25.264 I/ActivityManager(  733): Delay finish: com.android.mms/.transaction.SmsReceiver
+01-02 00:00:25.284 I/ActivityManager(  733): Resuming delayed broadcast
+01-02 00:00:25.294 I/ActivityManager(  733): Delay finish: com.android.calendar/.alerts.AlertReceiver
+01-02 00:00:26.014 I/ActivityManager(  733): Waited long enough for: ServiceRecord{41d03c08 u0 com.android.calendar/.alerts.InitAlarmsService}
+01-02 00:00:26.014 I/ActivityManager(  733): Resuming delayed broadcast
+01-02 00:00:26.034 I/ActivityManager(  733): Delay finish: com.android.providers.calendar/.CalendarProviderBroadcastReceiver
+01-02 00:00:26.054 I/ActivityManager(  733): Resuming delayed broadcast
+01-02 00:00:29.127 I/PowerManagerService(  733): Waking up from sleep...
+01-02 00:00:29.227 I/WindowManager(  733): Lock screen displayed!
+01-02 00:00:39.127 I/PowerManagerService(  733): Going to sleep due to screen timeout...
+01-02 00:00:40.158 I/ActivityManager(  733): Waited long enough for: ServiceRecord{41903c18 u0 com.qualcomm.rcsimsbootstraputil/com.qualcomm.rcsimssettings.QrcsImsSettingsService}
+01-02 00:01:07.014 W/SocketClient(  204): write error (Broken pipe)
+01-02 00:01:07.084 D/QcConnectivityService(  733): Sampling interval elapsed, updating statistics ..
+01-02 00:01:07.144 D/QcConnectivityService(  733): Done.
+01-02 00:01:07.144 D/QcConnectivityService(  733): Setting timer for 720seconds
+01-02 00:01:09.006 I/ActivityManager(  733): Start proc com.android.musicfx for broadcast com.android.musicfx/.ControlPanelReceiver: pid=1623 uid=10010 gids={50010, 3003, 3002}
+01-02 00:13:07.147 D/QcConnectivityService(  733): Sampling interval elapsed, updating statistics ..
+01-02 00:13:07.187 D/QcConnectivityService(  733): Done.
+01-02 00:13:07.187 D/QcConnectivityService(  733): Setting timer for 720seconds
+01-02 13:00:01.731 D/Vold    (  199): Volume sdcard1 state changing -1 (Initializing) -> 0 (No-Media)
